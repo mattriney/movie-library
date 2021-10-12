@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MovieComponent } from './movie-library/movie/movie.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieLibraryComponent } from './movie-library/movie-library.component';
 import { MovieDetailsComponent } from './movie-library/movie/movie-details/movie-details.component';
@@ -14,6 +15,7 @@ import { SynopsisComponent } from './movie-library/movie/movie-details/synopsis/
 @NgModule({
   declarations: [
     AppComponent,
+    MovieComponent,
     HeaderComponent,
     MovieLibraryComponent,
     MovieDetailsComponent,
