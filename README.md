@@ -1,5 +1,7 @@
 # MovieLibrary
 
+This is a Plex-esque demo of CRUD, Create, Read, Update, and Delete, built using angular and bootstrap.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
 ## Development server
