@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieLibraryComponent } from './movie-library/movie-library.component';
 import { MovieDetailsComponent } from './movie-library/movie/movie-details/movie-details.component';
-import { MovieItemComponent } from './movie-library/movie/movie-details/movie-item/movie-item.component';
+import { TitleComponent } from './movie-library/movie/movie-details/title/title.component';
+import { CoverArtComponent } from './movie-library/movie/movie-details/cover-art/cover-art.component';
+import { StarsComponent } from './movie-library/movie/movie-details/stars/stars.component';
+import { SynopsisComponent } from './movie-library/movie/movie-details/synopsis/synopsis.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { MovieItemComponent } from './movie-library/movie/movie-details/movie-it
     HeaderComponent,
     MovieLibraryComponent,
     MovieDetailsComponent,
-    MovieItemComponent
+    TitleComponent,
+    CoverArtComponent,
+    StarsComponent,
+    SynopsisComponent,
   ],
   imports: [
     BrowserModule,
