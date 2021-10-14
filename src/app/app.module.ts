@@ -12,6 +12,8 @@ import { CoverArtComponent } from './movie-library/movie/movie-details/cover-art
 import { StarsComponent } from './movie-library/movie/movie-details/stars/stars.component';
 import { SynopsisComponent } from './movie-library/movie/movie-details/synopsis/synopsis.component';
 import { RatingComponent } from './movie-library/movie/movie-details/rating/rating.component';
+import { MovieAddComponent } from './movie-library/movie/movie-add/movie-add.component';
+import { MovieEditComponent } from './movie-library/movie/movie-edit/movie-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { RatingComponent } from './movie-library/movie/movie-details/rating/rati
     StarsComponent,
     SynopsisComponent,
     RatingComponent,
+    MovieAddComponent,
+    MovieEditComponent,
   ],
   imports: [
     BrowserModule,
