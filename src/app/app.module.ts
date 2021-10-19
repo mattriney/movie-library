@@ -14,6 +14,7 @@ import { SynopsisComponent } from './movie-library/movie/movie-details/synopsis/
 import { RatingComponent } from './movie-library/movie/movie-details/rating/rating.component';
 import { MovieAddComponent } from './movie-library/movie/movie-add/movie-add.component';
 import { MovieEditComponent } from './movie-library/movie/movie-edit/movie-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MovieEditComponent } from './movie-library/movie/movie-edit/movie-edit.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

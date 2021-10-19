@@ -1,28 +1,38 @@
-<hr>
 <div class="container">
-  <form class="form-horizontal" action="/action_page.php">
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Title:</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Enter Movie Title" name="title">
-      </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div id="user-data">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text"
+            id="username"
+            class="form-control"
+            ngModel
+            name="username">
+          </div>
+          <button class="btn btn-default" type="button">Suggest an Username</button>
+          <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="secret">Secret Questions</label>
+          <select id="secret"
+          class="form-control"
+          ngModel
+          name="secret">
+            <option value="pet">Your first Pet?</option>
+            <option value="teacher">Your first teacher?</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Rating:</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="pwd" placeholder="Enter Rating" name="rating">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Synopsis:</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="pwd" placeholder="Enter Synopsis" name="synopsis">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
+  </div>
 </div>

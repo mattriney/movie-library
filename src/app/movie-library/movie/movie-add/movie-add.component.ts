@@ -12,4 +12,9 @@ export class MovieAddComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(form: NgForm)  {
+    console.log(form);
+  }
+
+
 }
